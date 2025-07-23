@@ -6,6 +6,10 @@ header{
     max-width: 1140px;
     margin: 0 auto;
 }
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 .nav-ber{
     display: flex;
     align-items: center;
@@ -17,4 +21,22 @@ header{
     color: rgb(68, 66, 66);
     font-size: 1.rem;
     margin-left: 1rem;
+}
+/* banner section start */
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 0;
+    gap: 4rem;
+}
+.banner-left h1{
+font-size: 65px;
+font-weight: 700;
+margin-bottom: 2rem;
+}
+.banner-left p{
+font-size: 22px;
+font-weight: 400;
+color: rgba(0, 0, 0, 0.5);
 }
