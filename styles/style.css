@@ -105,12 +105,13 @@ button {
     margin-bottom: 1rem;
 
 }
-.details li{
+
+.details li {
     font-size: 22px;
     font-weight: 400;
     margin-bottom: 1rem;
     color: rgba(0, 0, 0, 0.5);
-     
+
 }
 
 .details-imgicontenar {
@@ -123,5 +124,172 @@ button {
     position: absolute;
     top: -130px;
     right: -130px;
+}
 
+.latest-contenar {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.Latest-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-between;
+
+    text-align: center;
+    color: white;
+
+
+}
+.Latest-left h3{
+    font-size: 20px;
+font-weight: 700;
+margin-bottom: .5rem;
+}
+.Latest-left a{
+font-size: 16px;
+font-weight: 600;
+color: white;
+
+}
+
+.Latest-left-img-1 {
+    background-image: url(../assets/deal-bloom.png);
+    background-size: cover;
+    height: 50%;
+    width: 45vh;
+    position: relative;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+
+
+}
+
+.left-content-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+
+}
+
+.Latest-left-img-2 {
+
+    background-image: url(../assets/deal-ana.png);
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    height: 50%;
+    position: relative;
+
+
+
+
+}
+
+.left-content-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Latest-right {
+    background-image: url(../assets/deal-zabo.png);
+    position: relative;
+    background-size: cover;
+    height: 435px;
+    width: 80vh;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+
+}
+
+.right-content {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.Latest-right h1{
+font-size: 35px;
+font-weight: 900;
+margin-bottom: .8rem;
+}
+
+.Latest-right a{
+   font-size: 20px;
+font-weight: 700;
+margin-bottom: .8rem; 
+color: white;
+}
+
+.footer-bg{
+ 
+    height: 533px;
+    background-image: url(../assets/news-letter-bg.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    
+    
+}
+.footer-bg h1{
+  font-size: 50px;
+font-weight: 700;  
+color: white;
+margin-bottom: 2rem;
+
+}
+.footer-content{
+    text-align: center;
+}
+.footer-input{
+    
+   display: flex;
+   
+   
+    
+
+}
+.footer-input input{
+
+    width: 644px;
+    padding-left: 1rem;
+}
+.Contact-section{
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+}
+.footer-logo{
+    font-size: 22px;
+font-weight: 400;
+color: rgba(0, 0, 0, 0.5);
+width: 359px;
+}
+.link-contenar{
+display: flex;
+gap: 5rem;
+}
+.link a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-bottom: 1rem;
+    color:rgb(107, 114, 128) ;
+
+}
+.footer-icon img{
+margin-left: 1rem;
 }
