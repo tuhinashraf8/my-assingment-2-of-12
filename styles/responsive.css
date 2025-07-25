@@ -78,10 +78,34 @@ font-weight: 700;
 }
 
 .latest-contenar{
-   
+
+   flex-direction: column;
+   height: 100%;
+}
+.Latest-left{
+    
+    width: 100%;
+
+}
+.r-h {
+    font-size: 2rem;
+    font-weight: 800;
+    color: white;
+}
+    
+
+.mobile-hight{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 206px;
 }
 
 
+.Latest-right{
+  width: 100%;  
+}
 .footer-bg {
 
     height: 400px;
@@ -116,6 +140,5 @@ display: block;
 
 
 
-
-
 }
+

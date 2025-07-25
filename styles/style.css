@@ -1,3 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +18,7 @@ header {
 }
 
 main {
+    font-family: "Noto Serif", serif;
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -29,6 +39,11 @@ button {
 
 .nav-links {
     display: flex;
+}
+
+.nav-links :hover{
+    color: rgb(111, 1, 255);
+    font-weight: 800;
 }
 
 .nav-links a {
@@ -82,10 +97,11 @@ button {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-   
+
 }
-.card img{
-     max-width: 100%;
+
+.card img {
+    max-width: 100%;
 }
 
 .card button {
@@ -107,7 +123,9 @@ button {
     gap: 5rem;
     margin: 10rem 0;
 }
-
+.details-imgicontenar{
+    width: 100%;
+}
 .details h1 {
     font-size: 50px;
     font-weight: 700;
@@ -125,11 +143,13 @@ button {
 
 .details-imgicontenar {
     position: relative;
-     
+
 }
-.details-imgicontenar img{
-max-width: 100%;
+
+.details-imgicontenar img {
+    max-width: 100%;
 }
+
 .badge {
     width: 300px;
     height: 300px;
@@ -138,105 +158,104 @@ max-width: 100%;
     right: -130px;
 }
 
-.latest-contenar{
-/* border: 2px solid red; */
-display: flex;
-justify-content: space-between;
-gap: 1rem;
-height: 430px; 
-margin-bottom: 4rem;
+.badge:hover{
+    animation: spin 3s linear infinite;
 }
-.Latest-left{
- /* border: 2px solid rgb(0, 255, 34);  */
- width: 40%;
- display: flex;  
- flex-direction: column;
- gap: 1rem;
+
+
+.latest-contenar {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 430px;
+    margin-bottom: 4rem;
 }
-.Latest-left-img-1{
-/* border: 2px solid rgb(68, 0, 255);   */
-background-image: url(../assets/deal-bloom.png);
-height: 50%;
-background-repeat: no-repeat;
-background-size: cover;
-position: relative;
-/* box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5); */
+
+.Latest-left {
+    /* border: 2px solid rgb(0, 255, 34);  */
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
-.left-h{
+
+.Latest-left-img-1 {
+    /* border: 2px solid rgb(68, 0, 255);   */
+    background-image: url(../assets/deal-bloom.png);
+    height: 50%;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    border-radius: 1rem;
+}
+
+.left-h {
     font-size: 20px;
-font-weight: 700;
-color: white;
-margin-bottom: 1rem;
-}
-.left-a{
-  font-size: 16px;
-font-weight: 600; 
-color: white; 
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1rem;
 }
 
+.left-a {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
 
-.left-content-1{
-/* border: 2px solid rgb(255, 0, 200);  */
-position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.Latest-left-img-2 {
+    /* border: 2px solid rgb(17, 20, 3);  */
+    background-image: url(../assets/deal-ana.png);
+    height: 50%;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    background-size: cover;
+    border-radius: 1rem;
+}
 
-}
-.Latest-left-img-2{
-/* border: 2px solid rgb(17, 20, 3);  */
-background-image: url(../assets/deal-ana.png);
-height: 50%;
-background-repeat: no-repeat;
-background-size: cover;
-box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
-position: relative;
-}
-.left-content-2{
-/* border: 2px solid rgb(0, 153, 255);  */
-position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-.Latest-right{
-/* border: 2px solid rgb(0, 255, 255);  */
-width: 75%;
-background-image: url(../assets/deal-zabo.png);
-box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
-  background-size: contain; /* or cover */
-  background-repeat: no-repeat;
-  background-position: center;
-position: relative;
-  height: 100%;
-  background-size: cover;
-
-
-}
-.right-content{
-/* border: 2px solid rgb(230, 155, 213);  */
-position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.Latest-right {
+    /* border: 2px solid rgb(0, 255, 255);  */
+    width: 75%;
     
+    background-image: url(../assets/deal-zabo.png);
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    border-radius: 1rem;
+
+
 }
-.r-h{
+
+.r-h {
     font-size: 40px;
-font-weight: 800;
-color: white;
+    font-weight: 800;
+    color: white;
 }
-.r-a{
+
+.r-a {
     font-size: 20px;
-font-weight: 500;
-color: white; 
+    font-weight: 500;
+    color: white;
 }
+
 .footer-bg {
 
-    
+
     background-image: url(../assets/news-letter-bg.png);
     background-position: center;
     height: 533px;
@@ -251,8 +270,8 @@ color: white;
 }
 
 .footer-bg h1 {
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 80px;
+font-weight: 700;
     color: white;
     margin-bottom: 2rem;
 
